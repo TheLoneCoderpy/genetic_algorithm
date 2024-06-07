@@ -50,11 +50,6 @@ class Individuum:
                     self.data[i] = 0
 
     def summed_weight(self):
-        #w = 0
-        #for i in range(len(self.data)):
-        #    if self.data[i] == 1:
-        #        w += packets[i].weight
-        #return w
         return sum([packets[i].weight for i in range(len(self.data)) if self.data[i] == 1])
 
 
